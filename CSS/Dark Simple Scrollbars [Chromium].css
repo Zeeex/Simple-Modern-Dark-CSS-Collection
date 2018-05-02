@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name        Dark Simple Scrollbars [Chromium].css
+@namespace   https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection
+@version     1.0.0
+@description Dark Scrollbars for Chromium Browsers
+@author      Zex [Zeeex] 
+==/UserStyle== */
 ::-webkit-scrollbar {
 	width: 11px !important;
 	height: 9px !important;
