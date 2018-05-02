@@ -1,0 +1,37 @@
+@-moz-document domain("phoronix.com") {
+/*Simple Modern Dark Phoronix userstyle v1.1
+https://userstyles.org/styles/146982/simple-modern-dark-phoronix
+Made by Zex*/
+body {
+	filter: invert(100%);
+	background: #000;
+}
+img,
+object,
+twitterwidget,
+#player {
+	filter: invert(100%);
+}
+a {
+	color: #9d328b !important;
+}
+#header,
+#menuwrap,
+#search input[type='submit'],
+#channel-subtabbar,
+#channel-tabbar,
+#channel-tabbar .channel-tabbar-list li a,
+#footer-tabbar {
+	background: #c387ce !important;
+}
+#categories-content a:hover,
+#linklist li.menulink a.linknode:hover,
+li.menulink span:hover {
+	background: #db7bc1 !important;
+}
+#headerwrap {
+	background: #fff;
+}
+.extra-info header {
+	color: #000;
+}}
