@@ -1,8 +1,15 @@
+/* ==UserStyle==
+@name        Simple Modern Dark Neowin 2018
+@namespace   neowin.Zeeex
+@homepageURL https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection
+@supportURL  https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection/issues
+@version     1.0.0
+@description Dark Theme for Neowin.net
+@author      Zex [Zeeex] 
+@copyright   Zeeex
+==/UserStyle== */
+
 @-moz-document domain("neowin.net") {
-/* Simple Modern Dark Neowin 2018
-https://userstyles.org/styles/137393/
-Check out my tool for optimizing Windows: 
-https://xtrtoolbox.blogspot.com*/
 .wrapper,
 body,
 .page,
