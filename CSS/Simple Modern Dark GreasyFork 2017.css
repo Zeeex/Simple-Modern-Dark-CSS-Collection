@@ -1,180 +1,228 @@
-@-moz-document domain('greasyfork.org'){
-/*Simple Modern Dark Greasyfork 2017 v1.0*/
+/* ==UserStyle==
+@name           Simple Modern Dark Greasyfork 2017
+@namespace      greasyfork.Zeeex
+@version        1.0.0
+@description    Dark Theme for Greasyfork.org
+@author         Zex [Zeeex]
+@homepageURL 	https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection
+@supportURL  	https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection/issues
+@updateURL   	https://raw.githubusercontent.com/Zeeex/Simple-Modern-Dark-CSS-Collection/master/CSS/Simple%20Modern%20Dark%20GreasyFork%202017.css
+@copyright 	Zeeex
+==/UserStyle== */
+@-moz-document domain('greasyfork.org')
+{
+	html,
+	body,
+	#Head,
+	#install-area,
+	#script-content
+	{
+		color: #fff !important;
+		background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+	}
 
-html,
-body,
-#Head,
-#install-area,
-#script-content {
-	color: #fff !important;
-	background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
-}
-#main-header,
-#main-header a,
-#main-header a:visited,
-#main-header a:active,
-body:not(.Settings) {
-	background: rgba(0, 0, 0, 0);
-}
-.script-list,
-.user-list,
-.text-content,
-.list-option-group ul,
-.pagination>*,
-.script-list+.pagination>*,
-.user-list+.pagination>*,
-.pagination>a:hover,
-.pagination>a:focus,
-.SiteMenu nav,
-nav nav,
-#Panel .FilterMenu .Active a,
-#Panel .PanelCategories .Active a,
-#Panel .FilterMenu a:hover,
-#Panel .PanelCategories a:hover,
-#Panel .FilterMenu a:focus,
-#Panel .PanelCategories a:focus,
-.list-option-group .list-current,
-.list-option-group a:hover,
-.RecentDiscussionFilter a,
-.RecentDiscussionFilter a:hover,
-.RecentDiscussionFilter a:focus,
-.Pager>*,
-#additional-info>div {
-	background: #000;
-}
-/* CONTROLS */
+	#main-header,
+	#main-header a,
+	#main-header a:visited,
+	#main-header a:active,
+	body:not(.Settings)
+	{
+		background: rgba(0, 0, 0, 0);
+	}
 
-input,
-input.DateBox,
-input.InputBox,
-input.SmallInput,
-textarea,
-input.SmallInput:focus,
-input.InputBox:focus,
-textarea:focus,
-ul.token-input-list,
-select {
-	color: #fff;
-	background: #000;
-}
-span {
-	color: #fff;
-}
-label {
-	color: #fff !important;
-}
-/* ACCENT COLOR */
+	.script-list,
+	.user-list,
+	.text-content,
+	.list-option-group ul,
+	.pagination > *,
+	.script-list + .pagination > *,
+	.user-list + .pagination > *,
+	.pagination > a:hover,
+	.pagination > a:focus,
+	.SiteMenu nav,
+	nav nav,
+	#Panel .FilterMenu .Active a,
+	#Panel .PanelCategories .Active a,
+	#Panel .FilterMenu a:hover,
+	#Panel .PanelCategories a:hover,
+	#Panel .FilterMenu a:focus,
+	#Panel .PanelCategories a:focus,
+	.list-option-group .list-current,
+	.list-option-group a:hover,
+	.RecentDiscussionFilter a,
+	.RecentDiscussionFilter a:hover,
+	.RecentDiscussionFilter a:focus,
+	.Pager > *,
+	#additional-info > div
+	{
+		background: #000;
+	}
+	/* CONTROLS */
+	input,
+	input.DateBox,
+	input.InputBox,
+	input.SmallInput,
+	textarea,
+	input.SmallInput:focus,
+	input.InputBox:focus,
+	textarea:focus,
+	ul.token-input-list,
+	select
+	{
+		color: #fff;
+		background: #000;
+	}
 
-a,
-#main-header h1 {
-	color: #8bc34a !important;
-}
-#user-profile,
-.list-option-group a:focus,
-.script-list,
-.user-list,
-.text-content,
-#script-info,
-.list-option-group ul,
-#Panel .FilterMenu,
-#Panel .PanelCategories,
-#Panel .MeBox,
-#Content,
-.pagination>*,
-.script-list+.pagination>*,
-.user-list+.pagination>*,
-.Pager>a:hover,
-.Pager>a:focus {
-	background: #2d2d2d;
-}
-.SiteSearch .Button {
-	background-color: #8bc34a;
-}
-.list-option-group .list-current,
-.list-option-group .list-current,
-#script-links .current,
-#Panel .PanelCategories .Active a,
-li.current {
-	background: #8bc34a;
-	color: #000;
-}
-/* DISABLE BORDERS */
+	span
+	{
+		color: #fff;
+	}
 
-#script-links .current,
-#Panel .FilterMenu .Active a,
-#Panel .PanelCategories .Active a,
-.list-option-group .list-current {
-	border: none;
-}
-.good-rating-count {
-	background-color: rgba(22, 241, 22, 0.2);
-	color: #0f0;
-}
-.ok-rating-count {
-	background-color: rgba(205, 220, 57, 0.2);
-	color: #FFEB3B;
-}
-.bad-rating-count {
-	background-color: rgba(233, 30, 99, 0.2);
-	color: #F44336;
-}
-.Button,
-#Panel .FilterMenu,
-#Panel .PanelCategories {
-	color: #8bc34a;
-	background: #2d2d2d;
-}
-#Panel .MeBox {
-	color: #2d2d2d !important;
-	background: #8bc34a !important;
-}
-a.Hijack.Bookmark:hover {
-	background-color: #8bc34a
-}
-/* BLACK TEXT */
+	label
+	{
+		color: #fff !important;
+	}
+	/* ACCENT COLOR */
+	a,
+	#main-header h1
+	{
+		color: #8bc34a !important;
+	}
 
-#Panel .MeBox a.Username {
-	color: #000 !important;
-}
-/*TEXT CHANGE*/
+	#user-profile,
+	.list-option-group a:focus,
+	.script-list,
+	.user-list,
+	.text-content,
+	#script-info,
+	.list-option-group ul,
+	#Panel .FilterMenu,
+	#Panel .PanelCategories,
+	#Panel .MeBox,
+	#Content,
+	.pagination > *,
+	.script-list + .pagination > *,
+	.user-list + .pagination > *,
+	.Pager > a:hover,
+	.Pager > a:focus
+	{
+		background: #2d2d2d;
+	}
 
-a.ItemLink,
-.FilterMenu {
-	text-transform: uppercase;
-}
-#Content .HomepageTitle {
-	border-top: 7px solid #8bc34a;
-	background: #000;
-}
-.Item.Read {
-	background: #222;
-}
-.script-list,
-.user-list,
-.text-content,
-#script-info,
-.list-option-group ul,
-#Panel .FilterMenu,
-#Panel .PanelCategories,
-#Panel .MeBox,
-#Content,
-.pagination>*,
-.script-list li,
-.script-list+.pagination>*,
-.user-list+.pagination>* {
-	border: none;
-	box-shadow: none;
-}
-div.token-input-dropdown,
-div.token-input-dropdown ul li.token-input-dropdown-item,
-div.token-input-dropdown ul li {
-	background: #000 !important;
-}
-div.token-input-dropdown ul li.token-input-selected-dropdown-item {
-	background: #2d2d2d !important;
-}
-/* COMPATIBILITY WITH GREASYFORK COMPACT */
+	.SiteSearch .Button
+	{
+		background-color: #8bc34a;
+	}
 
-.script-list::before {
-	background: rgba(0, 0, 0, 0)
-}}
+	.list-option-group .list-current,
+	.list-option-group .list-current,
+	#script-links .current,
+	#Panel .PanelCategories .Active a,
+	li.current
+	{
+		background: #8bc34a;
+		color: #000;
+	}
+	/* DISABLE BORDERS */
+	#script-links .current,
+	#Panel .FilterMenu .Active a,
+	#Panel .PanelCategories .Active a,
+	.list-option-group .list-current
+	{
+		border: none;
+	}
+
+	.good-rating-count
+	{
+		background-color: rgba(22, 241, 22, 0.2);
+		color: #0f0;
+	}
+
+	.ok-rating-count
+	{
+		background-color: rgba(205, 220, 57, 0.2);
+		color: #FFEB3B;
+	}
+
+	.bad-rating-count
+	{
+		background-color: rgba(233, 30, 99, 0.2);
+		color: #F44336;
+	}
+
+	.Button,
+	#Panel .FilterMenu,
+	#Panel .PanelCategories
+	{
+		color: #8bc34a;
+		background: #2d2d2d;
+	}
+
+	#Panel .MeBox
+	{
+		color: #2d2d2d !important;
+		background: #8bc34a !important;
+	}
+
+	a.Hijack.Bookmark:hover
+	{
+		background-color: #8bc34a
+	}
+	/* BLACK TEXT */
+	#Panel .MeBox a.Username
+	{
+		color: #000 !important;
+	}
+	/*TEXT CHANGE*/
+	a.ItemLink,
+	.FilterMenu
+	{
+		text-transform: uppercase;
+	}
+
+	#Content .HomepageTitle
+	{
+		border-top: 7px solid #8bc34a;
+		background: #000;
+	}
+
+	.Item.Read
+	{
+		background: #222;
+	}
+
+	.script-list,
+	.user-list,
+	.text-content,
+	#script-info,
+	.list-option-group ul,
+	#Panel .FilterMenu,
+	#Panel .PanelCategories,
+	#Panel .MeBox,
+	#Content,
+	.pagination > *,
+	.script-list li,
+	.script-list + .pagination > *,
+	.user-list + .pagination > *
+	{
+		border: none;
+		box-shadow: none;
+	}
+
+	div.token-input-dropdown,
+	div.token-input-dropdown ul li.token-input-dropdown-item,
+	div.token-input-dropdown ul li
+	{
+		background: #000 !important;
+	}
+
+	div.token-input-dropdown ul li.token-input-selected-dropdown-item
+	{
+		background: #2d2d2d !important;
+	}
+	/* COMPATIBILITY WITH GREASYFORK COMPACT */
+	.script-list::before
+	{
+		background: rgba(0, 0, 0, 0)
+	}
+}
