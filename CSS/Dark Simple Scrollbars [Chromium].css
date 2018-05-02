@@ -10,7 +10,7 @@
 }
 ::-webkit-scrollbar-thumb {
 	background: rgba(55, 55, 55, 0.8) !important;
-	border: rgba(211, 218, 227, 0.8) solid 1px !important;
+	border: rgba(158, 161, 164, .8) solid 1px !important;
 	-webkit-border-radius: 20px !important;
 }
 ::-webkit-scrollbar-thumb:active {
