@@ -1,37 +1,60 @@
-@-moz-document domain("phoronix.com") {
-/*Simple Modern Dark Phoronix userstyle v1.1
-https://userstyles.org/styles/146982/simple-modern-dark-phoronix
-Made by Zex*/
-body {
-	filter: invert(100%);
-	background: #000;
+/* ==UserStyle==
+@name           Simple Modern Dark Phoronix
+@namespace      phoronix.Zeeex
+@version        1.0.0
+@description    Dark Theme for Phoronix.com
+@author         Zex [Zeeex]
+@homepageURL 	https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection
+@supportURL  	https://github.com/Zeeex/Simple-Modern-Dark-CSS-Collection/issues
+@updateURL   	https://raw.githubusercontent.com/Zeeex/Simple-Modern-Dark-CSS-Collection/master/CSS/Simple%20Modern%20Dark%20Phoronix%202017.css
+@copyright 	Zeeex
+==/UserStyle== */
+@-moz-document domain("phoronix.com")
+{
+	body
+	{
+		filter: invert(100%);
+		background: #000;
+	}
+
+	img,
+	object,
+	twitterwidget,
+	#player
+	{
+		filter: invert(100%);
+	}
+
+	a
+	{
+		color: #9d328b !important;
+	}
+
+	#header,
+	#menuwrap,
+	#search input[type='submit'],
+	#channel-subtabbar,
+	#channel-tabbar,
+	#channel-tabbar .channel-tabbar-list li a,
+	#footer-tabbar
+	{
+		background: #c387ce !important;
+	}
+
+	#categories-content a:hover,
+	#linklist li.menulink a.linknode:hover,
+	li.menulink span:hover
+	{
+		background: #db7bc1 !important;
+	}
+
+	#headerwrap
+	{
+		background: #fff;
+	}
+
+	.extra-info header
+	{
+		color: #000;
+	}
 }
-img,
-object,
-twitterwidget,
-#player {
-	filter: invert(100%);
-}
-a {
-	color: #9d328b !important;
-}
-#header,
-#menuwrap,
-#search input[type='submit'],
-#channel-subtabbar,
-#channel-tabbar,
-#channel-tabbar .channel-tabbar-list li a,
-#footer-tabbar {
-	background: #c387ce !important;
-}
-#categories-content a:hover,
-#linklist li.menulink a.linknode:hover,
-li.menulink span:hover {
-	background: #db7bc1 !important;
-}
-#headerwrap {
-	background: #fff;
-}
-.extra-info header {
-	color: #000;
-}}
